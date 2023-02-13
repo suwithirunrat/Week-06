@@ -48,17 +48,17 @@
 
 2. ใน method main ให้ประกาศตัวแปรดังต่อไปนี้
 
-``` cs
-    int var = 30;
-    Int var1;
-    int var2, var3;
-    int var4 = var5;
-    Int var6 = 2, var7;
-    int var8 = 10 * 5;
-    int var9 = var;
-    int var10, Char c1, Float f1;
-    double d1 = false;
-    Bool b1 = 0;
+``` text
+int var = 30;
+Int var1;
+int var2, var3;
+int var4 = var5;
+Int var6 = 2, var7;
+int var8 = 10 * 5;
+int var9 = var;
+int var10, Char c1, Float f1;
+double d1 = False;
+Bool b1 = 0;
 ```
 
 3. มีบรรทัดใดบ้าง ที่มีข้อความผิดพลาด 
@@ -74,8 +74,8 @@
 String interpreter จะช่วยตีความให้ค่าในตัวแปรชนิดต่างๆ กลายเป็น string โดยอัตโนมัติ ดังตัวอย่าง
 
  ```cs
-    int a = 100;
-    string s = $"a = {a}";
+int a = 100;
+string s = $"a = {a}";
  ```
 
 ตัวแปร `a` ในเครื่องหมาย `{ }` จะถูกแปลงเป็นข้อความ เทียบเท่ากับการใช้ `a.ToString();` 
@@ -84,106 +84,107 @@ String interpreter จะช่วยตีความให้ค่าใน�
 1. สร้าง consol project
 2. ใน method Main() ให้เขียนโปรแกรมต่อไปนี้ (แบ่งเป็นรอบๆ ตามชุดที่กำหนด) รันและบันทึกผล 
 3. อธิบายสิ่งที่เกิดขึ้นในแต่ละบรรทัด
+## 4. ถ้ามีที่ผิดใน code ให้แก้ไขให้ถูกต้องจนรันได้และนำส่วนที่แก้ไขแล้วมาใส่ในใบงานด้วย (เขียนในส่วนคำตอบ ไม่ต้องแก้ในส่วนของโจทย์)
 
 
 #### ชุดที่ 1 ####
 ```cs
-    Console.WriteLine("{0} and {1}", 3,5);
-    Console.WriteLine("{0} and {1}", 3.0,5.0);
-    Console.WriteLine("{0} and {1}", 3.0d, 5.0d);
-    Console.WriteLine("{0:F1} and {1:F1}", 3.0, 5.0);
-    Console.WriteLine("{0:F2} and {1:F2}", 3.0d, 5.0d);
+Console.writeLine("{0} and {1}", 3,5);
+Console.writeLine("{0} and {1}", 3.0,5.0);
+Console.writeLine("{0} and {1}", 3.0d, 5.0d);
+Console.writeLine("{0:F1} and {1:F1}", 3.0, 5.0);
+Console.writeLine("{0:F2} and {1:F2}", 3.0d, 5.0d);
 ```
 
 #### ชุดที่ 2 ####
 ```cs
-    Console.WriteLine($"{3} and {1}");
-    Console.WriteLine($"{3} and {1}");
-    Console.WriteLine($"{3.0d} and {1.0001d}");
-    Console.WriteLine($"{3:F2} and {1000.123:F1}");
-    Console.WriteLine($"{3.123456:F2} and {5.123000:F4}");
+Console.WriteLine($"{3} and {1}");
+Console.WriteLine($"{3} and {1}");
+Console.WriteLine($"{3.0d} and {1.0001d}");
+Console.WriteLine($"{3:F2} and {1000.123:F1}");
+Console.WriteLine($"{3.123456:F2} and {5.123000:F4}");
 ```
 
 #### ชุดที่ 3 ####
 ```cs
-    Console.WriteLine($"         1111111111222222");
-    Console.WriteLine($"1234567890123456789012345");
-    Console.WriteLine($"{1,0}");
-    Console.WriteLine($"{1,1}");
-    Console.WriteLine($"{1,2}");
-    Console.WriteLine($"{1,3}");
-    Console.WriteLine($"{1,4}");
-    Console.WriteLine($"{1,5}");
-    Console.WriteLine($"{1,10}");
-    Console.WriteLine($"{1,15}");
-    Console.WriteLine($"{1,20}");
-    Console.WriteLine($"{1,22}");
-    Console.WriteLine($"{1,25}");
+Console.WriteLine($"         1111111111222222");
+Console.WriteLine($"1234567890123456789012345");
+Console.WriteLine($"{1,0}");
+Console.WriteLine($"{1,1}");
+Console.WriteLine($"{1,2}");
+Console.WriteLine($"{1,3}");
+Console.WriteLine($"{1,4}");
+Console.WriteLine($"{1,5}");
+Console.WriteLine($"{1,10}");
+Console.WriteLine($"{1,15}");
+Console.WriteLine($"{1,20}");
+Console.WriteLine($"{1,22}");
+Console.WriteLine($"{1,25}");
 ```
 
 #### ชุดที่ 4 ####
 ```cs
-    int i = 123456789;
-    Console.WriteLine("Regular string format");
-    Console.WriteLine("{0}",i);
-    Console.WriteLine("String interpreter");
-    Console.WriteLine($"None ==> {i}");
-    Console.WriteLine($"   E ==> {i:E}");
-    Console.WriteLine($"   F ==> {i:F}");
-    Console.WriteLine($"   G ==> {i:G}");
-    Console.WriteLine($"   N ==> {i:N}");
-    Console.WriteLine($"   P ==> {i:P}");
-    Console.WriteLine($"   X ==> {i:X}");
+int i = 123456789;
+Console.WriteLine("Regular string format");
+Console.WriteLine("{0}",i);
+Console.WriteLine("String interpreter");
+Console.WriteLine($"None ==> {i}");
+Console.WriteLine($"   E ==> {i:E}");
+Console.WriteLine($"   F ==> {i:F}");
+Console.WriteLine($"   G ==> {i:G}");
+Console.WriteLine($"   N ==> {i:N}");
+Console.WriteLine($"   P ==> {i:P}");
+Console.WriteLine($"   X ==> {i:X}");
 ```
 
 #### ชุดที่ 5 ####
 ```cs
-    int i = 123456789;
-    Console.WriteLine("Regular string format");
-    Console.WriteLine("         {0,20}",i);
-    Console.WriteLine("String interpreter");
-    Console.WriteLine($"None ==> {i,20}");
-    Console.WriteLine($"   E ==> {i,20:E}");
-    Console.WriteLine($"   F ==> {i,20:F}");
-    Console.WriteLine($"   G ==> {i,20:G}");
-    Console.WriteLine($"   N ==> {i,20:N}");
-    Console.WriteLine($"   P ==> {i,20:P}");
-    Console.WriteLine($"   X ==> {i,20:X}");
+int i = 123456789;
+Console.WriteLin("Regular string format");
+Console.WriteLin("         {0,20}",i);
+Console.WriteLin("String interpreter");
+Console.WriteLin($"None ==> {i,20}");
+Console.WriteLin($"   E ==> {i,20:E}");
+Console.WriteLin($"   F ==> {i,20:F}");
+Console.WriteLin($"   G ==> {i,20:G}");
+Console.WriteLin($"   N ==> {i,20:N}");
+Console.WriteLin($"   P ==> {i,20:P}");
+Console.WriteLin($"   X ==> {i,20:X}");
 ```
 
 
 #### ชุดที่ 6 ####
 ```cs
-    const double i = 123.456789;
-    Console.WriteLine($"{i,10:F1}");
-    Console.WriteLine($"{i,10:F2}");
-    Console.WriteLine($"{i,10:F3}");
-    Console.WriteLine($"{i,10:F4}");
-    Console.WriteLine($"{i,10:F5}");
+const double i = 123.456789;
+Console.writLine($"{i,10:F1}");
+Console.writLine($"{i,10:F2}");
+Console.writLine($"{i,10:F3}");
+Console.writLine($"{i,10:F4}");
+Console.writLine($"{i,10:F5}");
 ```
 
 
 #### ชุดที่ 6 ####
 ```cs
-    string name = "Hello";
-    Console.WriteLine(String.Format("{0} there. I said {0}! {0}???", name));
-    Console.WriteLine($"{2:d} {0:d} {1:d}", 1, 2, 3);
-    Console.WriteLine($"Hello " + $"World");
-    Console.WriteLine($"Here comes a slash \\");
-    Console.WriteLine($"|{999, 10}|");
-    Console.WriteLine($"|{000,-10}|");
-    Console.WriteLine($"The value: {500}.");
-    Console.WriteLine($"The value: {500:C}.");
-    Console.WriteLine($"{12.3456789,-10:F4}");
-    Console.WriteLine($"{12.3456789,-10:C}");
-    Console.WriteLine($"{12.3456789,-10:E3}");
-    Console.WriteLine($"{65535,-10:x}");
-    Console.WriteLine($"{65535,-10:X}");
-    int i;
-    Console.WriteLine("Value\tSquared\tCubed");
-    for (i = 1; i < 10; i++)
-        Console.WriteLine($"{i}\t{i*i}\t{i*i*i}");
-    Console.WriteLine($"{1234.56789:#.###}.");
+string name = "Hello";
+Consol.writeLine(String.Format("{0} there. I said {0}! {0}???", name));
+Consol.writeLine($"{2:d} {0:d} {1:d}", 1, 2, 3);
+Consol.writeLine($"Hello " + $"World");
+Consol.writeLine($"Here comes a slash \\");
+Consol.writeLine($"|{999, 10}|");
+Consol.writeLine($"|{000,-10}|");
+Consol.writeLine($"The value: {500}.");
+Consol.writeLine($"The value: {500:C}.");
+Consol.writeLine($"{12.3456789,-10:F4}");
+Consol.writeLine($"{12.3456789,-10:C}");
+Consol.writeLine($"{12.3456789,-10:E3}");
+Consol.writeLine($"{65535,-10:x}");
+Consol.writeLine($"{65535,-10:X}");
+int i;
+Console.writeLine("Value\tSquared\tCubed");
+for (i = 1; i < 10; i++)
+    Console.writeLine($"{i}\t{i*i}\t{i*i*i}");
+Console.WriteLine($"{1234.56789:#.###}.");
 ```
 
 ---- 
